@@ -7,11 +7,6 @@ import { setLogging, setLogFn, journal } from './utils.js'
 const DateMenu = Main.panel.statusArea.dateMenu;
 
 export default class NotificationThemeExtension extends Extension {
-  constructor(metadata) {
-    super(metadata);
-    this._themeSignalId = null;
-  }
-
   enable() {
     setLogFn((msg, error = false) => {
       let level;
